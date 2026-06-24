@@ -1,0 +1,12 @@
+*.zip
+*.jar
+build/
+.gradle/
+.idea/
+*.log
+*.pyc
+__pycache__/
+*.class
+app/build/
+.android/
+local.properties
