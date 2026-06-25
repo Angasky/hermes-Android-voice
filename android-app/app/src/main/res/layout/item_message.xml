@@ -3,16 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="4dp">
 
+    <!-- 用户消息 -->
     <LinearLayout
-        android:id="@+id/messageContainer"
+        android:id="@+id/msgContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/bubble_user"
-        android:padding="12dp"
-        android:layout_gravity="end">
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/bubble_user_new"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:maxWidth="280dp">
 
         <TextView
             android:id="@+id/tvMessage"
@@ -20,15 +27,49 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textColor="#FFFFFF"
-            android:lineSpacingExtra="4dp"/>
+            android:lineSpacingExtra="3dp"/>
 
         <TextView
             android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:textColor="#94A3B8"
-            android:layout_marginTop="4dp"
+            android:textSize="10sp"
+            android:textColor="#93C5FD"
+            android:layout_marginTop="6dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- AI消息 -->
+    <LinearLayout
+        android:id="@+id/llAiMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bubble_ai_new"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:maxWidth="280dp">
+
+        <TextView
+            android:id="@+id/tvAiMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#E5E7EB"
+            android:lineSpacingExtra="3dp"/>
+
+        <TextView
+            android:id="@+id/tvAiTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="6dp"
             android:gravity="end"/>
     </LinearLayout>
 </LinearLayout>

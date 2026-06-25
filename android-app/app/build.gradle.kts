@@ -5,14 +5,15 @@ plugins {
 
 android {
     namespace = "com.angasky.hermes"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.angasky.hermes"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "0.1.0"
+        targetSdk = 36
+        versionCode = 2
+        versionName = "0.2.0"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -39,6 +40,9 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("org.json:json:20231013")
+    implementation("androidx.preference:preference:1.2.1")
 }
+
